@@ -1,4 +1,0 @@
-const p=document.querySelector('.progress');
-addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-innerHeight;p.style.width=(scrollY/Math.max(h,1)*100)+'%'});
-const m=document.querySelector('.menu'),n=document.querySelector('nav');
-if(m&&n){m.onclick=()=>n.classList.toggle('show');n.querySelectorAll('a').forEach(a=>a.onclick=()=>n.classList.remove('show'));}
